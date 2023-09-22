@@ -5,6 +5,8 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/home">
 
+    <!-- ID у элементов графа должны быть индентичны как id у элементов в menu.
+     Нужно для того, что бы navController понял, что их нужно связывать -->
     <fragment
         android:id="@+id/home"
         android:name="com.user.navigation.HomeFragment"

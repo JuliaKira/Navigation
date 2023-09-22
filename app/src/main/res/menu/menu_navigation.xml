@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ID у элементов графа должны быть индентичны как id у элементов в menu.
+     Нужно для того, что бы navController понял, что их нужно связывать -->
     <item
         android:id="@+id/home"
         android:icon="@drawable/home"

@@ -3,21 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/home">
 
+    <!-- ID у элементов графа должны быть индентичны как id у элементов в menu.
+     Нужно для того, что бы navController понял, что их нужно связывать -->
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/home"
         android:name="com.user.navigation.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+
     <fragment
-        android:id="@+id/userFragment"
+        android:id="@+id/user"
         android:name="com.user.navigation.UserFragment"
         android:label="fragment_user"
         tools:layout="@layout/fragment_user" />
+
     <fragment
-        android:id="@+id/infoFragment"
+        android:id="@+id/info"
         android:name="com.user.navigation.InfoFragment"
         android:label="fragment_info"
         tools:layout="@layout/fragment_info" />
+
 </navigation>
